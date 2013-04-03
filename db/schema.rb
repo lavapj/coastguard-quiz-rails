@@ -11,11 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130331205416) do
+ActiveRecord::Schema.define(:version => 20130402234915) do
 
   create_table "cards", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "name"
+    t.string   "classname"
+    t.string   "abbreviation"
+    t.string   "title"
+    t.string   "paygrade"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end

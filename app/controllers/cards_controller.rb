@@ -1,6 +1,13 @@
 class CardsController < ApplicationController
+
+  def random
+    @card = Card.order("RANDOM()").first
+    redirect_to card_path(@card)
+  end
+
   # GET /cards
   # GET /cards.json
+
   def index
     @cards = Card.all
 

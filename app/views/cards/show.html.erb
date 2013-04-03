@@ -1,5 +1,30 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Name:</b>
+  <%= @card.name %>
+</p>
+
+<p>
+  <b>Classname:</b>
+  <%= @card.classname %>
+</p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%= @card.abbreviation %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @card.title %>
+</p>
+
+<p>
+  <b>Paygrade:</b>
+  <%= @card.paygrade %>
+</p>
+
 
 <%= link_to 'Edit', edit_card_path(@card) %> |
 <%= link_to 'Back', cards_path %>

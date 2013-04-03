@@ -18,7 +18,7 @@ class CardsControllerTest < ActionController::TestCase
 
   test "should create card" do
     assert_difference('Card.count') do
-      post :create, card: {  }
+      post :create, card: { abbreviation: @card.abbreviation, classname: @card.classname, name: @card.name, paygrade: @card.paygrade, title: @card.title }
     end
 
     assert_redirected_to card_path(assigns(:card))
@@ -35,7 +35,7 @@ class CardsControllerTest < ActionController::TestCase
   end
 
   test "should update card" do
-    put :update, id: @card, card: {  }
+    put :update, id: @card, card: { abbreviation: @card.abbreviation, classname: @card.classname, name: @card.name, paygrade: @card.paygrade, title: @card.title }
     assert_redirected_to card_path(assigns(:card))
   end
 

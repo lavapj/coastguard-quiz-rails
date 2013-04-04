@@ -6,6 +6,7 @@ class CreateCards < ActiveRecord::Migration
       t.string :abbreviation
       t.string :title
       t.string :paygrade
+      t.string :image
 
       t.timestamps
     end
